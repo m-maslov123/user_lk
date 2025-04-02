@@ -24,17 +24,17 @@
         <div class="left-column">
             <div class="card">
                 <div class="card-number">•••• 6865</div>
-                <div>Собственные средства</div>
-                <div class="card-balance">12.30 ₽</div>
-                <div style="margin-top: 20px">Доступные для займа</div>
-                <div class="available-amount">49 000.00 ₽</div>
+                <div>Собственные нахалы</div>
+                <div class="card-balance"></div>
+                <div style="margin-top: 20px">Доступные для проеба</div>
+                <div class="available-amount"></div>
             </div>
 
             <div class="promo-banner">
-                <h3 class="promo-title">Подключитесь к программе «Привет, МИР!»</h3>
-                <p class="promo-text">Вас ждут акции, скидки и кешбэк от партнеров</p>
-                <a href="#" style="color: #0066cc; font-size: 14px; text-decoration: none; margin-top: 10px; display: block;">
-                    Как подключиться к программе лояльности «Привет, МИР!»
+                <h3 class="promo-title">Подключитесь к программе "Далбоеб! Я заберу твой оффер себе"»</h3>
+                <p class="promo-text">Вас ждут жулики, мошенники и кешбэк от налоговой</p>
+                <a href="https://seniorpomidornaya.ru/" style="color: #0066cc; font-size: 14px; text-decoration: none; margin-top: 10px; display: block;">
+                    Как подключиться к нахалам лучшего сорта?»
                 </a>
             </div>
         </div>
@@ -64,49 +64,16 @@
 
         <div class="right-column">
             <div class="menu-section">
-                <h3 class="menu-title">Здравствуйте, Петр!</h3>
+                <h3 class="menu-title">Здравствуйте, !</h3>
                 <p style="color: #666; margin-bottom: 20px;">выберите действие</p>
                 <ul class="menu-list">
-                    <li class="menu-item">Перевести</li>
+                    <li class="menu-item">Перевести косарь</li>
                     <li class="menu-item">История операций</li>
                     <li class="menu-item">Лимиты по карте</li>
                     <li class="menu-item">Выписка по лимиту</li>
                     <li class="menu-item">Заблокировать карту</li>
                     <li class="menu-item">Документы и согласия</li>
                     <li class="menu-item" id="limitToggle">Закрыть лимит</li>
-
-<script>
-    const menuItem = document.getElementById('limitToggle');
-        
-        // Обработчик наведения
-        menuItem.addEventListener('mouseenter', () => {
-            if (!menuItem.classList.contains('active')) {
-                menuItem.style.color = '#000';
-            }
-        });
-
-        // Обработчик ухода курсора
-      // menuItem.addEventListener('mouseleave', () => {
-        //    if (!menuItem.classList.contains('active')) {
-         //       menuItem.style.color = '#333';
-        //    }
-     //   });
-
-        // Обработчик клика
-             menuItem.addEventListener('click', () => {
-            const isActive = menuItem.classList.toggle('active');
-            menuItem.textContent = isActive 
-                ? 'Открыть лимит' 
-                : 'Закрыть лимит';
-        });
-document.getElementById('limitToggle').addEventListener('click', function() {
-    if (this.textContent === 'Закрыть лимит') {
-        this.textContent = 'Открыть лимит';
-    } else {
-        this.textContent = 'Закрыть лимит';
-    }
-});
-</script>
                     <li class="menu-item">Периодичность платежей</li>
                     <li class="menu-item">Пожаловаться</li>
                 </ul>
@@ -123,6 +90,19 @@ document.getElementById('limitToggle').addEventListener('click', function() {
             </div>
         </div>
     </main>
+    <!-- Модальное окно -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-modal" id="closeModal">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3>Сумма перевода</h3>
+            <input type="number" id="amountInput" placeholder="Введите сумму">
+            <button class="transfer-button" id="transferButton">Перевести</button>
+        </div>
+    </div>
+</div>
 
     <footer class="footer">
         <div>© 2025 ООО ЙУХ «Шарлотанская»</div>
