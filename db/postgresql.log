@@ -1,0 +1,20 @@
+2025-04-01 23:48:30.170 MSK [4394] LOG:  starting PostgreSQL 17.4 (Postgres.app) on aarch64-apple-darwin23.6.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
+2025-04-01 23:48:30.173 MSK [4394] LOG:  listening on IPv6 address "::1", port 5432
+2025-04-01 23:48:30.173 MSK [4394] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-04-01 23:48:30.174 MSK [4394] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-04-01 23:48:30.182 MSK [4397] LOG:  database system was shut down at 2025-04-01 23:48:29 MSK
+2025-04-01 23:48:30.190 MSK [4394] LOG:  database system is ready to accept connections
+2025-04-01 23:53:30.174 MSK [4395] LOG:  checkpoint starting: time
+2025-04-01 23:55:09.769 MSK [4395] LOG:  checkpoint complete: wrote 987 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=99.567 s, sync=0.022 s, total=99.596 s; sync files=317, longest=0.006 s, average=0.001 s; distance=4640 kB, estimate=4640 kB; lsn=0/1BD8F50, redo lsn=0/1BD8EC0
+2025-04-01 23:57:37.769 MSK [4660] LOG:  invalid length of startup packet
+2025-04-01 23:57:38.892 MSK [4661] LOG:  invalid length of startup packet
+2025-04-01 23:57:38.895 MSK [4664] LOG:  invalid length of startup packet
+2025-04-01 23:57:38.899 MSK [4665] LOG:  invalid length of startup packet
+2025-04-01 23:57:43.909 MSK [4670] LOG:  invalid length of startup packet
+2025-04-01 23:57:54.660 MSK [4394] LOG:  received fast shutdown request
+2025-04-01 23:57:54.660 MSK [4394] LOG:  aborting any active transactions
+2025-04-01 23:57:54.662 MSK [4394] LOG:  background worker "logical replication launcher" (PID 4400) exited with exit code 1
+2025-04-01 23:57:54.662 MSK [4395] LOG:  shutting down
+2025-04-01 23:57:54.663 MSK [4395] LOG:  checkpoint starting: shutdown immediate
+2025-04-01 23:57:54.714 MSK [4395] LOG:  checkpoint complete: wrote 947 buffers (5.8%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.025 s, sync=0.025 s, total=0.052 s; sync files=306, longest=0.001 s, average=0.001 s; distance=4322 kB, estimate=4608 kB; lsn=0/2011A68, redo lsn=0/2011A68
+2025-04-01 23:57:54.721 MSK [4394] LOG:  database system is shut down

@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    height: 40px;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-button {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #666;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #666;
+    text-decoration: none;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #00a651 0%, #2ecc71 100%);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+}
+
+.card-balance {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-number {
+    opacity: 0.8;
+    font-size: 14px;
+    text-align: right;
+}
+
+.available-amount {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.action-buttons {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    background: #f8f9fa;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #333;
+    text-align: left;
+    font-size: 16px;
+}
+
+.action-button svg {
+    margin-right: 10px;
+}
+
+.action-button:hover {
+    background: #f0f0f0;
+}
+
+.promo-banner {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e1f4ff 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.promo-title {
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.promo-text {
+    color: #666;
+    font-size: 14px;
+}
+
+.menu-section {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.menu-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-item {
+    padding: 12px 0;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.support-section {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.support-phone {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.support-text {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 12px;
+}
+.menu-item {
+    color: #333; /* Исходный цвет текста */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+    padding: 10px;
+    list-style: none;
+}
+
+.menu-item {
+    color: #333; /* Черный текст */
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    list-style: none;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+/* При наведении - только фон */
+.menu-item:hover {
+    background: #cdcdcd;
+}
+
+/* При клике - темный фон */
+.menu-item.active {
+    background: #27ae60; /* Зеленый фон */
+}
+
+/* Активное состояние при наведении */
+.menu-item.active:hover {
+    background: #85b3ef; /* Темнее зеленый */
+}
+/* Добавляем стили для заблокированного состояния */
+.main-content.disabled {
+    background: #f0f0f0 !important;
+    transition: background 0.3s ease;
+}
+
+.disabled .available-amount {
+    color: #999 !important;
+}
