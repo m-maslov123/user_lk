@@ -72,7 +72,7 @@ def get_user_data():
         status=result[1] if isinstance(result, tuple) else 200,
         mimetype='application/json'
     )
-
+# Транзакция
 @app.route('/transaction', methods=['POST'])
 def make_transaction():
     """Новый метод для выполнения транзакции"""
@@ -153,7 +153,7 @@ def make_transaction():
             cursor.close()
             conn.close()
 
-
+# Авторизация
 @app.route('/auth', methods=['POST'])
 def authenticate():
     try:
